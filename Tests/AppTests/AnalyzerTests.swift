@@ -74,7 +74,7 @@ class AnalyzerTests: AppTestCase {
                           "name": "p2",
                           "targets": ["t2"],
                           "type": {
-                            "library": []
+                            "library": ["automatic"]
                           }
                         }
                       ],

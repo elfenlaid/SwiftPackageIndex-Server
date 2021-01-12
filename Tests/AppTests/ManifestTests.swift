@@ -17,7 +17,7 @@ class ManifestTests: XCTestCase {
             """
             let data = Data(json.utf8)
             struct Test: Decodable, Equatable {
-                var type: Manifest.Product.`Type`
+                var type: Manifest.ProductType
             }
             XCTAssertEqual(try JSONDecoder().decode(Test.self, from: data), .init(type: .executable))
         }
@@ -31,7 +31,7 @@ class ManifestTests: XCTestCase {
             """
             let data = Data(json.utf8)
             struct Test: Decodable, Equatable {
-                var type: Manifest.Product.`Type`
+                var type: Manifest.ProductType
             }
             XCTAssertEqual(try JSONDecoder().decode(Test.self, from: data), .init(type: .library))
         }
